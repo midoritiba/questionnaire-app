@@ -62,8 +62,10 @@ function App() {
 
         {counter === data.length && <Results finalResult={finalResult} user={user}/>}
 
-        <footer>© 2022</footer>
+        
       </div>
+
+      <footer>© 2022</footer>
     </>
   );
 }
