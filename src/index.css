@@ -164,3 +164,52 @@ footer {
 .bold {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 1090px) {
+  body{
+    font-size: 18px;
+  }
+
+  .form-credentials {
+    padding-top: 0;
+    flex-wrap: wrap;
+    font-size: 28px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  .input-credentials{
+    font-size: 18px;
+  }
+
+  .question{
+    font-size: 24px;
+    padding-bottom: 2rem;
+  }
+
+  .section-questionnaire {
+    margin-top: 1rem;
+    height: 100%;
+  }
+  .group-radio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  button{
+    margin-top: 20px;
+  }
+  .label-section:nth-last-of-type(1){
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .form-credentials {
+    font-size:24px;
+  }
+  
+}
