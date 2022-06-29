@@ -8,7 +8,6 @@ const Questionnaire = ({setCounter, counter, question, setQuestionPoints, questi
             alert('Please select an item')
         } else {
             const result = {qid: counter+1,question: question, points: questionPoints}
-            console.log(result);
             setResults(result)
             setQuestionPoints(0)
             setCounter(counter+1)
@@ -41,16 +40,3 @@ const Questionnaire = ({setCounter, counter, question, setQuestionPoints, questi
 }
 
 export default Questionnaire
-
-{/* <input type="radio" id="A" name="select" value="1" onChange={e => {setQuestionPoints(e.target.value)}} />
-<label htmlFor="A">A</label>
-<input type="radio" id="B" name="select" value="2" onChange={e => {setQuestionPoints(e.target.value)}} />
-<label htmlFor="B">B</label>
-<input type="radio" id="C" name="select" value="3" onChange={e => {setQuestionPoints(e.target.value)}} />
-<label htmlFor="C">C</label>
-<input type="radio" id="D" name="select" value="4" onChange={e => {setQuestionPoints(e.target.value)}} />
-<label htmlFor="D">D</label>
-<input type="radio" id="E" name="select" value="5" onChange={e => {setQuestionPoints(e.target.value)}} />
-<label htmlFor="E">E</label>
-<input type="radio" id="F" name="select" value="6" onChange={e => {setQuestionPoints(e.target.value)}} />
-<label htmlFor="F">F</label> */}
