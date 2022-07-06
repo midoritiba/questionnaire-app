@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Credentials from './components/Credentials';
 import Questionnaire from './components/Questionnaire';
 import Results from './components/Results';
-import data from './components/data'
+import {data} from './components/data'
 
 function App() {
 
@@ -12,18 +12,14 @@ function App() {
   const [results, setResults] = useState({})
   const [finalResult, setFinalResult] = useState(null)
 
-  
-
   function getResult (newResult) {
     if (counter === 1) {
       const res = [newResult]
       return res
-      // console.log(finalResult);
     } else {
       const lastResult = [...finalResult, newResult]
       return lastResult
     }
-  
   }
 
   useEffect(() => {
@@ -58,11 +54,8 @@ function App() {
 
         }
 
-
-
         {counter === data.length && <Results finalResult={finalResult} user={user}/>}
-
-        
+       
       </div>
 
       <footer>© 2022</footer>

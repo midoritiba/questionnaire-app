@@ -1,4 +1,4 @@
-const data = [
+export const data = [
     {
         id: 1,
         "question": "When I plan something, I leave nothing to chance."
@@ -21,4 +21,37 @@ const data = [
     }
 ]
 
-export default data
+export const questions = [
+    {
+        id: "A",
+        value: 1,
+        span: "box one"
+    },
+    {
+        id: "B",
+        value: 2,
+        span: "box two"
+    },
+    {
+        id: "C",
+        value: 3,
+        span: "box three"
+    },
+    {
+        id: "D",
+        value: 4,
+        span: "box three"
+    },
+    {
+        id: "E",
+        value: 5,
+        span: "box two"
+    },
+    {
+        id: "F",
+        value: 6,
+        span: "box one"
+    },
+]
+
+// export {data, questions};
